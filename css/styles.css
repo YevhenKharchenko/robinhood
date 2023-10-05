@@ -115,6 +115,11 @@ button {
   background-color: #c3f53c;
   padding-top: 94px;
   padding-bottom: 80px;
+  background-image: url(../images/image1-min.png),
+    url(../images/Rectangle-min.png);
+  background-size: 692px 600px;
+  background-repeat: no-repeat;
+  background-position: bottom 12px right 370px;
 }
 
 .hero > .container {
@@ -156,7 +161,18 @@ button {
   padding: 10px 41px;
 }
 
+.hero-info-link {
+  display: flex;
+  gap: 12px;
+  align-items: center;
+  width: 370px;
+}
+
 .hero-bottom-text {
+  color: #000;
+  font-family: Roboto;
+  font-size: 18px;
+  font-weight: 400;
   font-size: 18px;
   line-height: 1.56;
   letter-spacing: 0.014em;
@@ -167,8 +183,12 @@ button {
 /* ====================INVESTORS==================== */
 
 .investors {
+  margin: 0 auto;
   padding-top: 34px;
   padding-bottom: 106px;
+  background-image: url(../images/Rectangle7-min.png);
+  background-repeat: no-repeat;
+  background-position: bottom 0 right 200px;
 }
 
 .investors-text {
@@ -208,7 +228,15 @@ button {
   margin-bottom: 26px;
 }
 
+.investors-adv-link {
+  display: flex;
+  gap: 5px;
+  align-items: center;
+  width: 185px;
+}
+
 .investors-adv-text {
+  color: #000;
   font-size: 18px;
   font-weight: 700;
   line-height: 1.56;
@@ -267,6 +295,13 @@ button {
   letter-spacing: 0.014em;
 }
 
+.investors-info-link {
+  display: flex;
+  gap: 12px;
+  align-items: center;
+  width: 350px;
+}
+
 .investors-bottom-text {
   color: #6f787e;
   font-size: 18px;
@@ -289,9 +324,39 @@ button {
   display: flex;
   padding-left: 179px;
   padding-right: 93px;
+  position: relative;
 }
 
 .learn-list {
+  position: absolute;
+  top: 50%;
+  left: 132px;
+  transform: translateY(-50%);
+}
+
+.learn-item {
+  position: relative;
+  text-align: end;
+}
+
+.learn-item:first-child::before {
+  content: "";
+  background-image: url(../images/arrow-up.svg);
+  width: 28px;
+  height: 28px;
+  position: absolute;
+  top: -44px;
+  right: 0;
+}
+
+.learn-item:last-child::after {
+  content: "";
+  background-image: url(../images/arrow-down.svg);
+  width: 28px;
+  height: 28px;
+  position: absolute;
+  bottom: -44px;
+  right: 0;
 }
 
 .learn-item:not(:last-child) {
@@ -306,10 +371,19 @@ button {
   letter-spacing: 0.01em;
 }
 
+.learn-item-link:hover,
+.learn-item-link:focus,
+.learn-item-link:active {
+  color: #ffffff;
+}
+
 .learn-img {
 }
 
 .learn-text-container {
+  position: absolute;
+  top: 116px;
+  right: 255px;
 }
 
 .learn-title {
@@ -341,7 +415,10 @@ button {
 
 .products > .container {
   padding-left: 93px;
-  padding-right: 93px;
+  background-image: url(../images/Rectangle9-min.png);
+  background-size: 585px 585px;
+  background-repeat: no-repeat;
+  background-position: bottom 34px right 87px;
 }
 
 .products-title {
@@ -349,6 +426,7 @@ button {
   font-weight: 400;
   line-height: 1.29;
   letter-spacing: 0.01em;
+  margin-bottom: 26px;
 }
 
 .products-list {
@@ -358,6 +436,17 @@ button {
 }
 
 .products-item {
+  position: relative;
+}
+
+.products-item:last-child::before {
+  content: "";
+  width: 1px;
+  height: 36px;
+  background-color: #000;
+  top: 0;
+  left: -16px;
+  position: absolute;
 }
 
 .products-item-link {
@@ -366,6 +455,16 @@ button {
   font-weight: 400;
   line-height: 1.5;
   letter-spacing: 0.01em;
+}
+
+.products-item-link:hover,
+.products-item-link:focus,
+.products-item-link:active {
+  color: #000000;
+}
+
+.crypto {
+  color: #ff90af;
 }
 
 .products-text {
@@ -404,6 +503,13 @@ button {
   letter-spacing: 0.014em;
 }
 
+.products-info-link {
+  display: flex;
+  gap: 12px;
+  align-items: center;
+  width: 370px;
+}
+
 .products-subtext {
   font-size: 12px;
   line-height: 1.67;
@@ -423,14 +529,18 @@ button {
 
 .footer > .container {
   padding-left: 93px;
-  padding-right: 93px;
 }
 
 .footer-top-container {
   display: flex;
   padding-bottom: 36px;
-  margin-bottom: 36px;
-  border-bottom: 2px solid #79858b;
+  margin-bottom: 0;
+  border-bottom: 1px solid #79858b;
+}
+
+.footer-bottom-container {
+  border-top: 1px solid #79858b;
+  padding-top: 36px;
 }
 
 .footer-main-list {
@@ -578,6 +688,13 @@ button {
   font-weight: 400;
   line-height: 1.71;
   letter-spacing: 0.07em;
+}
+
+.footer-info-link {
+  display: flex;
+  gap: 12px;
+  align-items: center;
+  width: 270px;
 }
 
 .footer-bottom-text {
