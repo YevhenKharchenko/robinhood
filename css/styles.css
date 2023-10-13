@@ -113,13 +113,19 @@ button {
 
 .hero {
   background-color: #c3f53c;
+}
+
+.hero-background-container {
+  width: 1440px;
   padding-top: 94px;
-  padding-bottom: 80px;
+  padding-bottom: 108px;
+  margin-left: auto;
+  margin-right: auto;
   background-image: url(../images/image1-min.png),
     url(../images/Rectangle-min.png);
   background-size: 692px 600px;
   background-repeat: no-repeat;
-  background-position: bottom 12px right 370px;
+  background-position: bottom 22px right 119px;
 }
 
 .hero > .container {
@@ -183,12 +189,16 @@ button {
 /* ====================INVESTORS==================== */
 
 .investors {
+}
+
+.investors-background-container {
+  width: 1440px;
   margin: 0 auto;
   padding-top: 34px;
   padding-bottom: 106px;
   background-image: url(../images/Rectangle7-min.png);
   background-repeat: no-repeat;
-  background-position: bottom 0 right 200px;
+  background-position: bottom 0 right 0;
 }
 
 .investors-text {
